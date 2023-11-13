@@ -145,15 +145,17 @@ gapminder_summary_continent_year <- read_rds(here::here("data/gapminder-summary-
 
 5.  What are the data types of the three variables used for aesthetic mappings?
 
-```{r}
+    X-axis, Y-axis, and color
 
-ggplot(data = gapminder_2007,
-       mapping = aes(x = continent,
-                     y = lifeExp,
-                     fill = continent)) +
-  geom_boxplot(outlier.shape = NA) 
+    ```{r}
+    ggplot(data = gapminder_2007, aes(x = continent, y = lifeExp, fill = continent)) +
+      geom_boxplot(outlier.shape = NA) +  # NA removes outliers
+      labs(title = "Boxplot of Life Expectancy by Continent (2007)",
+           x = "Continent",
+           y = "Life Expectancy")
 
-```
+    #AI tool: https://chat.openai.com/share/5279ff72-cafc-4bfe-95f4-7c881f0e1b0f
+    ```
 
 ## Task 7: Create a timeseries plot
 
