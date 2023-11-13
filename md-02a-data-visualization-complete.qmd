@@ -1,6 +1,6 @@
 ---
 title: "Data Visualisation"
-author: ""
+author: "Lauren Judah"
 format:
   html:
     embed-resources: true
