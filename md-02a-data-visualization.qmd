@@ -143,7 +143,7 @@ gapminder_summary_continent_year <- read_rds(here::here("data/gapminder-summary-
 
 4.  Run the code contained in the code chunk and fix any errors.
 
-5.  What are the data types of the three variables used for aesthetic mappings?
+5.  What are the data types of the three variables used for aesthetic mappings? #X-axis, Y-axis, and color
 
     ```{r}
 
@@ -152,7 +152,7 @@ gapminder_summary_continent_year <- read_rds(here::here("data/gapminder-summary-
                          y = lifeExp,
                          fill = continent)) +
       geom_boxplot(outlier.shape = NA) 
-
+#AI tool: https://chat.openai.com/share/5279ff72-cafc-4bfe-95f4-7c881f0e1b0f
     ```
 
 ## Task 7: Create a timeseries plot
